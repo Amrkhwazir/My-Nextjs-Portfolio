@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const PortfoioPage = () => {
+const PortfoioPage = () => {
   return (
-    <div>AboutPage</div>
+    <div>portfolioPage</div>
   )
 }
+
+export default PortfoioPage

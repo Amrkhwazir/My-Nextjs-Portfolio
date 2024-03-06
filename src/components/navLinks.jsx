@@ -6,9 +6,10 @@ import React from 'react'
 
 export const NavLinks = ({link}) => {
     const pathName = usePathname();
-    console.log(pathName);
+    // console.log(pathName);
+    // console.log(link.url);
   return (
-    <Link className={`rounded p-1 ${pathName === link.url && "bg-black text-white"} `} href={link.url}>
+    <Link className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`} href={link.url}>
         {link.title}
         </Link>
   )
