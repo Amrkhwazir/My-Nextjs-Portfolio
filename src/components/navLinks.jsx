@@ -9,7 +9,7 @@ export const NavLinks = ({link}) => {
     // console.log(pathName);
     // console.log(link.url);
   return (
-    <Link className={`rounded px-2 py-1 ${pathName === link.url && "bg-black text-white"}`} href={link.url}>
+    <Link className={`rounded px-2 py-1 ${pathName === link.url && "bg-red-400 text-white"}`} href={link.url}>
         {link.title}
         </Link>
   )

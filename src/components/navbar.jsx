@@ -70,7 +70,7 @@ const listItemsVariants = {
 };
 
   return (
-    <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg'>
+    <div className='h-full font-mono flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-lg'>
       {/* LINKS */}
       <div className='hidden md:flex gap-4 w-1/3'>
       {
@@ -81,13 +81,12 @@ const listItemsVariants = {
       </div>
       {/* LOGO */}
       <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
-      <Link href="/" className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'>
-        <span className='text-white mr-1'>Aamir</span>
-        <span className='w-12 h-8 rounded bg-white text-black flex items-center justify-center'>dev</span>
+      <Link href="/" className='text-sm font-semibold flex items-center justify-center'>
+        <span className='text-black mr-1 text-xl md:text-3xl font-mono'>A<span className='text-orange-400'>K</span>M <span className='text-orange-400'>D</span>e<span className='text-red-400'>v.</span></span>
       </Link>
       </div>
       {/* SOCIALS */} 
-      <div className='hidden md:flex gap-4 w-1/3'>
+      <div className='hidden md:flex gap-6 w-1/3'>
         <Link href="https://github.com/Amrkhwazir" target='_blank'>
       <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
@@ -108,9 +107,9 @@ const listItemsVariants = {
       <div className='md:hidden'>
         
         <button  className='w-10 h-8 flex flex-col justify-between z-50 relative' onClick={() => setOpen((prev) => !prev)}>
-          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-black rounded origin-left'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-black rounded'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-black rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-red-400 rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-orange-400 rounded'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-red-500 rounded origin-left'></motion.div>
         </button>
         {/* MENU LIST */}
         { open &&
