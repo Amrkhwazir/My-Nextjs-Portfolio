@@ -3,11 +3,11 @@ import Image from "next/image";
 const Homepage = () => {
   return <div className="h-full font-mono flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/* IMAGE CONTAINER */}
-    <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-      <Image src="/hero.png" alt="" fill className="object-contain"/>
+    <div className="h-1/2  lg:h-[500px] lg:w-1/2 relative">
+      <Image src="/hero.jpg" alt="" fill className="object-contain"/>
     </div>
     {/* TEXT CONTAINER */}
-    <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
+    <div className=" h-1/2 pt-20 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
     {/* TITLE CONTAINER */}
     <h1 className="text-3xl bg-gradient-to-r from-teal-400 to-teal-100 bg-clip-text text-transparent md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
     {/* DESC */}
