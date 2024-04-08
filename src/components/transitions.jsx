@@ -9,9 +9,9 @@ const Transitions = ({children}) => {
     console.log(pathName)
   return (
     <AnimatePresence mode="wait">
-        <div key={pathName} className="w-screen h-screen bg-white">
+        <div key={pathName} className="w-screen h-screen bg-gray-950">
            
-            <motion.div className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40" 
+            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-400 to-teal-200 rounded-b-[100px] z-40" 
             animate={{height: "0vh"}}
             exit={{height:"140vh"}}
             transition={{duration: 0.6, ease: "easeOut" }}
@@ -26,7 +26,7 @@ const Transitions = ({children}) => {
                 {pathName}
             </motion.div>
 
-            <motion.div className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30 " 
+            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-400 to-teal-200 rounded-t-[100px] bottom-0 z-30 " 
             initial={{height: "140vh"}}
             animate={{height:"0vh", transition: { delay: 0.6 } }}
             />
