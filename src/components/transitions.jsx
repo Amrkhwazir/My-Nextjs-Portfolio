@@ -9,7 +9,7 @@ const Transitions = ({children}) => {
     console.log(pathName)
   return (
     <AnimatePresence mode="wait">
-        <div key={pathName} className="w-screen h-screen bg-gray-950">
+        <div key={pathName} className="w-screen h-screen bg-[#05161A]">
            
             <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-400 to-emerald-300 rounded-b-[100px] z-40" 
             animate={{height: "0vh"}}
@@ -31,10 +31,10 @@ const Transitions = ({children}) => {
             animate={{height:"0vh", transition: { delay: 0.6 } }}
             />
 
-          <div className="h-20 border-b border-teal-300">
+          <div className="h-20">
           <Navbar />
           </div>
-          <div className="h-[calc(100vh-6rem)] pt-6">
+          <div className="h-[calc(100vh-6rem)]">
         {children}
           </div>
         </div>
