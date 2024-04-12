@@ -81,8 +81,8 @@ const listItemsVariants = {
       </div>
       {/* LOGO */}
       <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
-      <Link href="/" className='text-sm font-semibold flex items-center justify-center'>
-        <span className='bg-gradient-to-r from-teal-300 to-teal-100 bg-clip-text text-transparent mr-1 text-2xl md:text-3xl font-mono'>AKMDev.</span>
+      <Link href="/" className='text-sm flex items-center justify-center'>
+        <span className='font-semibold bg-gradient-to-r from-teal-300 to-teal-100 bg-clip-text text-transparent mr-1 text-2xl md:text-3xl'>AKMDev.</span>
       </Link>
       </div>
       {/* SOCIALS */} 
@@ -115,6 +115,7 @@ const listItemsVariants = {
         { open &&
 
           <motion.div variants={listVariants} initial="closed" animate="opened" className='absolute top-0 right-0 w-screen h-screen bg-gray-950 text-white flex flex-col items-center justify-center gap-8 text-3xl z-40'>
+              <span className='font-semibold bg-gradient-to-r from-teal-300 to-teal-100 bg-clip-text text-transparent absolute top-6 left-11 text-2xl md:hidden '>AKMDev.</span>
       {links.map((link)=> (
         <motion.div variants={listItemsVariants} className='' key={link.title}>
         <Link href={link.url}>
