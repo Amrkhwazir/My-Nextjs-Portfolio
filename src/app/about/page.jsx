@@ -9,7 +9,7 @@ const AboutPage = () => {
 
 
   return (
-    <motion.div className="h-full text-white" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1}}>
+    <motion.div className="h-full text-white" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1.2}}>
       {/* CONTAINER */}
       <div className=''>
         {/* TEXT CONTAINER */}

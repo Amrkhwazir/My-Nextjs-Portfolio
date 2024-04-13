@@ -11,24 +11,24 @@ const Transitions = ({children}) => {
     <AnimatePresence mode="wait">
         <div key={pathName} className="w-screen h-screen bg-[#05161A]">
            
-            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-400 to-emerald-300 rounded-b-[100px] z-40" 
+            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-200 to-teal-400 rounded-b-[100px] z-40" 
             animate={{height: "0vh"}}
             exit={{height:"140vh"}}
-            transition={{duration: 0.6, ease: "easeOut" }}
+            transition={{duration: 0.9, ease: "easeIn" }}
             />
 
             <motion.div className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default w-fit h-fit z-50" 
             initial={{opacity: 1}}
             animate={{opacity: 0}}
             exit={{opacity: 0}}
-            transition={{duration: 0.8, ease: "easeOut" }}
+            transition={{duration: 0.6, ease: "easeIn" }}
             >
                 {pathName.substring(1)}
             </motion.div>
 
-            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-400 to-emerald-300 rounded-t-[100px] bottom-0 z-30 " 
+            <motion.div className="h-screen w-screen fixed bg-gradient-to-r from-teal-200 to-teal-400 rounded-t-[100px] bottom-0 z-30 " 
             initial={{height: "140vh"}}
-            animate={{height:"0vh", transition: { delay: 0.6 } }}
+            animate={{height:"0vh", transition: { delay: 0.9 } }}
             />
 
           <div className="h-20">
