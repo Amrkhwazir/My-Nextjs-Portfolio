@@ -1,8 +1,9 @@
 
 import "./globals.css";
 import Transitions from "@/components/transitions";
+import { Inter } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Amir Khan Portfolio App",
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#05161A]">
+      <body className={inter.className}>
       <Transitions>
        {children} 
       </Transitions>
