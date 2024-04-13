@@ -86,15 +86,15 @@ const listItemsVariants = {
       </Link>
       </div>
       {/* SOCIALS */} 
-      <div className='hidden md:flex gap-6 w-1/3'>
+      <div className='hidden md:flex gap-6 w-1/3 pt-1'>
         <Link href="https://github.com/Amrkhwazir" target='_blank'>
-      <Image src="" alt="" width={28} height={28} />
+      <Image src="/Github.png" alt="" width={28} height={28} />
         </Link>
         <Link href="#">
-      <Image src="/Whatsapp.png" alt="" width={26} height={26} />
+      <Image src="/fbook.png" alt="" width={28} height={28} />
         </Link>
         <Link href="#">
-      <Image src="/Facebook.png" alt="" width={28} height={28} />
+      <Image src="/Whatsapp.png" alt="" width={28} height={28} />
         </Link>
         <Link href="#">
       <Image src="/Instagram.png" alt="" width={28} height={28} />
