@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <motion.div className="h-full text-white" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1.2}}>
       {/* CONTAINER */}
-      <div className='h-full overflow-scroll'>
+      <div className='h-full'>
         {/* TEXT CONTAINER */}
 
       <div className='p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-28 lg:gap-48 xl:gap-64'>
@@ -32,7 +32,7 @@ const AboutPage = () => {
         <span className='italic'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, obcaecati.</span>
         {/* BIOGRAPHY SIGN */}
 
-        <div className='w-72 self-end'>
+        <div className='w-fit self-end'>
         <Image src="/signature.png" alt="my signature" width={300} height={10} />
         </div>
          {/* BIOGRAPHY SVG  */}
@@ -73,74 +73,74 @@ const AboutPage = () => {
         {/* LEFT  */}
         <div className="w-1/3">
         {/* JOB TITLE  */}
-        <div className="bg-white text-black p-3 font-semibold rounded-b-lg rounded-s-lg">Frontend React.js Developer</div>
+        <div className="w-fit bg-white text-black p-3 font-semibold rounded-b-lg rounded-s-lg">Frontend React.js Developer</div>
         {/* JOB DESC  */}
         <div className="p-3 text-sm italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatem?</div>
         {/* JOB DATE  */}
         <div className="p-3 text-sm font-semibold text-teal-300">Dec-2023 - March-2024</div>
         {/* JOB COMPANY  */}
-        <div className="p-1 rounded bg-white text-black text-sm font-semibold">Hiring Mine Pvt Ltd.</div>
+        <div className="p-1 mx-1 rounded bg-white text-black text-sm font-semibold w-fit">Hiring Mine Pvt Ltd.</div>
         </div>
         {/* CENTER  */}
-        <div className="w-1/6">
+        <div className="w-1/6 ">
         {/* LINE  */}
-        <div className="">
+        <div className="w-1 h-full bg-gray-300 relative">
         {/* LINE CIRCLE  */}
-        <div className=""></div>
+        <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 -left-2 bg-white"></div>
         </div>
         </div>
         {/* RIGHT  */}
         <div className="w-1/3"></div>
         </div>
-         {/* EXPERIENCE LIST ITEM  */}
-         <div className="">
+        {/* EXPERIENCE LIST ITEM  */}
+        <div className="flex justify-between h-48">
         {/* LEFT  */}
-        <div className="">
-        </div>
+        <div className="w-1/3"></div>
         {/* CENTER  */}
-        <div className="">
+        <div className="w-1/6 ">
         {/* LINE  */}
-        <div className="">
+        <div className="w-1 h-full bg-gray-300 relative">
         {/* LINE CIRCLE  */}
-        <div className=""></div>
+        <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 -left-2 bg-white"></div>
         </div>
         </div>
         {/* RIGHT  */}
-        <div className="">
-        {/* JOB TITLE  */}
-        <div className="">Frontend React.js Developer</div>
+        <div className="w-1/3">
+           {/* JOB TITLE  */}
+        <div className="w-fit bg-white text-black p-3 font-semibold rounded-b-lg rounded-s-lg">Frontend React.js Developer</div>
         {/* JOB DESC  */}
-        <div className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatem?</div>
+        <div className="p-3 text-sm italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatem?</div>
         {/* JOB DATE  */}
-        <div className="">Dec-2023 - March-2024</div>
+        <div className="p-3 text-sm font-semibold text-teal-300">Dec-2023 - March-2024</div>
         {/* JOB COMPANY  */}
-        <div className="">Hiring Mine Pvt Ltd.</div>
+        <div className="p-1 mx-1 rounded bg-white text-black text-sm font-semibold w-fit">Hiring Mine Pvt Ltd.</div>
         </div>
         </div>
-         {/* EXPERIENCE LIST ITEM  */}
-         <div className="">
+        {/* EXPERIENCE LIST ITEM  */}
+        <div className="flex justify-between h-48">
         {/* LEFT  */}
-        <div className="">
+        <div className="w-1/3">
         {/* JOB TITLE  */}
-        <div className="">Frontend React.js Developer</div>
+        <div className="w-fit bg-white text-black p-3 font-semibold rounded-b-lg rounded-s-lg">Frontend React.js Developer</div>
         {/* JOB DESC  */}
-        <div className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatem?</div>
+        <div className="p-3 text-sm italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatem?</div>
         {/* JOB DATE  */}
-        <div className="">Dec-2023 - March-2024</div>
+        <div className="p-3 text-sm font-semibold text-teal-300">Dec-2023 - March-2024</div>
         {/* JOB COMPANY  */}
-        <div className="">Hiring Mine Pvt Ltd.</div>
+        <div className="p-1 rounded bg-white text-black text-sm font-semibold w-fit">Hiring Mine Pvt Ltd.</div>
         </div>
         {/* CENTER  */}
-        <div className="">
+        <div className="w-1/6 ">
         {/* LINE  */}
-        <div className="">
+        <div className="w-1 h-full bg-gray-300 relative">
         {/* LINE CIRCLE  */}
-        <div className=""></div>
+        <div className="absolute w-5 h-5 rounded-full ring-4 ring-teal-400 -left-2 bg-white"></div>
         </div>
         </div>
         {/* RIGHT  */}
-        <div className=""></div>
+        <div className="w-1/3"></div>
         </div>
+         
         </div>
         </div>
       </div>

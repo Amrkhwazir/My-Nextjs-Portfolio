@@ -6,7 +6,7 @@ const Homepage = () => {
   
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1.2}}>
-    <div className="h-full overflow-scroll md:pb-0 lg:pb-0 flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-full md:pb-0 lg:pb-0 flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/* IMAGE CONTAINER */}
     <div className="h-1/2  lg:h-full lg:w-1/2 relative">
       <Image src="/hero.jpg" alt="" fill className="object-contain"/>
@@ -20,7 +20,7 @@ const Homepage = () => {
     {/* BUTTONS   */}
     <div className="w-full flex gap-4">
       <button className="p-4 font-bold rounded-lg  bg-gradient-to-r from-teal-500 to-emerald-400 text-white">View My Work</button>
-      <button className="p-4 rounded-lg ring-1 ring-teal-400 text-white ">Contact Me</button>
+      <button className="p-4 rounded-lg ring-1 ring-teal-400 text-white">Contact Me</button>
     </div>
     </div>
   </div>
