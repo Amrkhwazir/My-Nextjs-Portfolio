@@ -6,7 +6,7 @@ const Homepage = () => {
   
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1.2}}>
-    <div className="h-full overflow-y-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-full overflow-y-scroll flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/* IMAGE CONTAINER */}
     <div className="h-1/2 lg:h-full lg:w-1/2 relative">
       <Image src="/hero.jpg" alt="" fill className="object-contain"/>
