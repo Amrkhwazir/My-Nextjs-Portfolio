@@ -82,7 +82,7 @@ const listItemsVariants = {
       {/* LOGO */}
       <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
       <Link href="/" className='text-sm flex items-center justify-center'>
-        <span className='font-semibold bg-gradient-to-r from-sky-400 to-indigo-200 bg-clip-text text-transparent mr-1 text-2xl md:text-3xl'>AKMDev.</span>
+        <span className='font-semibold text-indigo-500 mr-1 text-2xl md:text-3xl'>AKMDev.</span>
       </Link>
       </div>
       {/* SOCIALS */} 
@@ -107,18 +107,18 @@ const listItemsVariants = {
       <div className='md:hidden '>
         
         <button  className='w-10 bg h-8 flex flex-col justify-between z-50 relative' onClick={() => setOpen((prev) => !prev)}>
-          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-white rounded origin-left'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-white rounded'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-white rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-indigo-500 rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-indigo-500 rounded'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-indigo-500 rounded origin-left'></motion.div>
         </button>
         {/* MENU LIST */}
         { open &&
 
           <motion.div variants={listVariants} initial="closed" animate="opened" className='absolute top-0 right-0 w-screen h-screen bg-zinc-900 text-white flex flex-col items-center justify-center gap-8 text-3xl z-40'>
-              <span className='font-semibold bg-gradient-to-r from-sky-400 to-indigo-200 bg-clip-text text-transparent absolute top-6 left-4 text-2xl md:hidden '>AKMDev.</span>
+              <span className='font-semibold text-indigo-500 bg-clip-text text-transparent absolute top-6 left-4 text-2xl md:hidden '>AKMDev.</span>
               <svg id='patternId' className='absolute -z-40 opacity-60' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(25)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 6%, 10%, 1)'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linecap='square' stroke-width='1' stroke='hsla(243, 75%, 59%, 1)' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linecap='square' stroke-width='1' stroke='hsla(198, 93%, 60%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
       {links.map((link)=> (
-        <motion.div variants={listItemsVariants} className='bg-gradient-to-r from-sky-400 to-indigo-200 bg-clip-text text-transparent' key={link.title}>
+        <motion.div variants={listItemsVariants} key={link.title}>
         <Link href={link.url}>
           {link.title}
           </Link>
