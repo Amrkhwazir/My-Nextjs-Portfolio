@@ -14,13 +14,13 @@ const Homepage = () => {
     {/* TEXT CONTAINER */}
     <div className=" h-1/2 pt-20 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
     {/* TITLE CONTAINER */}
-    <h1 className="py-2 text-3xl text-indigo-500 md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
+    <h1 className="py-2 text-3xl bg-gradient-to-r from-purple-300 via-red-300 inline-block text-transparent bg-clip-text  md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
     {/* DESC */}
     <p className="md:text-lg text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, amet nostrum veniam ex cupiditate dolore blanditiis minima veritatis velit perferendis.</p>
     {/* BUTTONS   */}
     <div className="w-full flex gap-4 pb-4 md:pb-0 lg:pb-0">
-      <button className="p-4 font-bold rounded-lg  bg-indigo-500 text-white">View My Work</button>
-      <button className="p-4 rounded-lg ring-1 ring-indigo-500 text-white">Contact Me</button>
+      <button className="p-4 font-bold rounded-lg  bg-gradient-to-r from-purple-300 to-red-300 text-white">View My Work</button>
+      <button className="p-4 rounded-lg ring-1 ring-red-300 text-white">Contact Me</button>
     </div>
     </div>
   </div>
