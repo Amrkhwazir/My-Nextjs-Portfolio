@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { NavLinks } from './navLinks'
-import { easeIn, easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 
 const links = [

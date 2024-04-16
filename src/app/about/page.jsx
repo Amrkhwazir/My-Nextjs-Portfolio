@@ -82,7 +82,7 @@ const AboutPage = () => {
          <div className='flex flex-col gap-12 justify-center pb-48' ref={experienceRef}>
         {/* EXPERIENCE TITLE  */}
         <motion.h1  
-        initial={{x: "-300px"}}
+        initial={{x: "-350px"}}
         animate={isExperienceRefInView ? {x: 0} : {}}
         transition={{delay: 0.4}} 
         className='font-bold text-2xl text-indigo-500'>EXPERIENCE</motion.h1>
