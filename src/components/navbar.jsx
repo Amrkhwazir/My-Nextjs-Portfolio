@@ -8,10 +8,10 @@ import { motion } from 'framer-motion'
 
 
 const links = [
-  {url: "/", title: "Home"},
-  {url: "/about", title: "About"},
-  {url: "/portfolio", title: "Portfolio"},
-  {url: "/contact", title: "Contact"},
+  {url: "/", title: "Home", sNo: 1},
+  {url: "/about", title: "About", sNo: 2},
+  {url: "/portfolio", title: "Portfolio", sNo: 3},
+  {url: "/contact", title: "Contact", sNo:4},
 ]
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     opened:{
       rotate: 45,
-      backgroundColor: "rgb(255,255,255)"
+      backgroundColor: "rgb(8, 8, 8)"
     }
   }
 
@@ -41,7 +41,7 @@ const Navbar = () => {
     },
     opened:{
       rotate: -45,
-      backgroundColor: "rgb(255,255,255)"
+      backgroundColor: "rgb(8, 8, 8)"
     }
   };
 
@@ -82,48 +82,65 @@ const listItemsVariants = {
       {/* LOGO */}
       <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
       <Link href="/" className='text-sm flex items-center justify-center'>
-        <span className='font-semibold text-red-300 mr-1 text-2xl md:text-3xl'>AKMDev.</span>
+        <span className='font-semibold text-white mr-1 text-2xl md:text-3xl'>AKMDev.</span>
       </Link>
       </div>
       {/* SOCIALS */} 
       <div className='hidden md:flex gap-6 w-1/3 pt-1'>
-        <Link href="https://github.com/Amrkhwazir" target='_blank'>
-      <Image src="/Github.png" alt="" width={28} height={28} />
+        <Link className='rounded-full flex items-center justify-center' href="https://github.com/Amrkhwazir" target='_blank'>
+      <Image src="/githubsvg.png" alt=""  width={25} height={25} />
         </Link>
-        <Link href="#">
-      <Image src="/fbook.png" alt="" width={28} height={28} />
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/facebooksvg.png" alt="" width={25} height={25} />
         </Link>
-        <Link href="#">
-      <Image src="/Whatsapp.png" alt="" width={28} height={28} />
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/whatsappsvg.png" alt="" width={25} height={25} />
         </Link>
-        <Link href="#">
-      <Image src="/Instagram.png" alt="" width={28} height={28} />
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/instagramsvg.png" alt="" width={25} height={25} />
         </Link>
-        <Link href="https://www.linkedin.com/in/aamir-khan-215836233/">
-      <Image src="/Linkedin.png" alt="" width={24} height={24} />
+        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/">
+      <Image src="/linkedinroundsvg.png" alt="" width={25} height={25} />
         </Link>
       </div>
       {/* MENU */}
       <div className='md:hidden '>
         
         <button  className='w-10 bg h-8 flex flex-col justify-between z-50 relative' onClick={() => setOpen((prev) => !prev)}>
-          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-red-300 rounded origin-left'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-red-300 rounded'></motion.div>
-          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-red-300 rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={topVariants} className=' w-10 h-1 bg-white rounded origin-left'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={centerVariants} className=' w-10 h-1 bg-red-400 rounded'></motion.div>
+          <motion.div animate={open ? "opened" : "closed"} variants={bottomVariants} className=' w-10 h-1 bg-white rounded origin-left'></motion.div>
         </button>
         {/* MENU LIST */}
         { open &&
 
-          <motion.div variants={listVariants} initial="closed" animate="opened" className='absolute top-0 right-0 w-screen h-screen bg-zinc-900 text-white flex flex-col items-center justify-center gap-8 text-3xl z-40'>
-              <span className='font-semibold absolute top-6 left-4 text-2xl md:hidden '>AKMDev.</span>
-              <svg id='patternId' className='absolute -z-40 opacity-60' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(25)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 6%, 10%, 1)'/><path d='M20-5V5m0 30v10m20-30v10M0 15v10'  stroke-linecap='square' stroke-width='1' stroke='hsla(243, 75%, 59%, 1)' fill='none'/><path d='M-5 40H5M-5 0H5m30 0h10M35 40h10M15 20h10'  stroke-linecap='square' stroke-width='1' stroke='hsla(198, 93%, 60%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
+          <motion.div variants={listVariants} initial="closed" animate="opened" className='absolute top-0 right-0 w-screen h-screen bg-white text-black flex flex-col items-center justify-start pt-32 gap-16 text-3xl z-40'>
+              <span className='font-semibold absolute top-6 left-4 text-2xl md:hidden'>AKMDev.</span>
       {links.map((link)=> (
-        <motion.div variants={listItemsVariants} key={link.title}>
+        <motion.div  variants={listItemsVariants} key={link.title}>
         <Link href={link.url}>
-          {link.title}
+          <span className='bg-zinc-200 w-10 text-center text-black absolute -mt-5  left-20'>{link.sNo}</span>
+          <span>{link.title}</span>
           </Link>
           </motion.div> 
       ))}
+       <div className='bg-black flex gap-8 w-screen justify-center h-20 absolute bottom-10'>
+        <Link className='rounded-full flex items-center justify-center' href="https://github.com/Amrkhwazir" target='_blank'>
+      <Image src="/githubsvg.png" alt=""  width={32} height={32} />
+        </Link>
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/facebooksvg.png" alt="" width={32} height={32} />
+        </Link>
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/whatsappsvg.png" alt="" width={32} height={32} />
+        </Link>
+        <Link className='rounded-full flex items-center justify-center' href="#">
+      <Image src="/instagramsvg.png" alt="" width={32} height={32} />
+        </Link>
+        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/">
+      <Image src="/linkedinroundsvg.png" alt="" width={32} height={32} />
+        </Link>
+      </div>
         </motion.div>
     }
       </div>

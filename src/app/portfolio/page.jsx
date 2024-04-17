@@ -47,11 +47,11 @@ const PortfoioPage = () => {
   const x = useTransform(scrollYProgress, [0,1], ["0%", "-80%"])
   return (
     <motion.div className="h-full text-white" initial={{y: "-200vh"}} animate={{y: "0%"}} transition={{duration: 1}}>
-    <div className="h-[600vh] relative" ref={ref}>
+    <div className="h-[800vh] relative" ref={ref}>
       <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-7xl md:text-8xl lg:text-8xl text-center">
         My Works
         </div>
-      <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+      <div className="sticky top-0 flex h-screen gap-6 items-center overflow-hidden">
         <motion.div style={{x}} className="flex ">
           <div className="h-screen w-screen flex justify-center items-center bg-gradient-to-r from-purple-300 to-red-300" />
           
@@ -59,12 +59,12 @@ const PortfoioPage = () => {
           <div className={`h-screen w-screen flex justify-center items-center bg-gradient-to-r ${item.color}`} key={item.id}>
             <div className="flex flex-col gap-6 text-white">
               <h1 className='text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl'>{item.title}</h1>
-              <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+              <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[400px]">
               <Image src={item.img} alt='projects image' fill />
               </div>
-              <p className='w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
-              <Link href={item.link}>
-                <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+              <p className='w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]'>{item.desc}</p>
+              <Link href={item.link} className='flex justify-end'>
+                <button className="p-2 text-sm md:p-4 md:text-base lg:p-6 lg:text-lg bg-white text-gray-600 font-semibold  rounded">See Demo</button>
                 </Link>
             </div>
           </div>
@@ -72,8 +72,8 @@ const PortfoioPage = () => {
         </motion.div >
       </div>
     </div>
-        <div className="w-screen h-screen flex flex-col mt-32 gap-16 items-center justify-center text-center text-black">
-          <h1 className='text-7xl md:text-8xl lg:text-8xl'>Do you have a project</h1>
+        <div className="w-screen h-screen  flex flex-col mt-2 md:mt-32 gap-16 items-center justify-center text-center text-black">
+          <h1 className='text-4xl md:text-6xl lg:text-8xl'>Do you have a project</h1>
           <div className="relative">
             <motion.svg animate={{rotate: 360}} transition={{duration:8, ease: "linear", repeat: Infinity}}  viewBox='0 0 300 300' className='w-80 h-80 md:w-[500px] md:h-[500px]'>
               <defs>

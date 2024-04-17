@@ -12,9 +12,9 @@ const Homepage = () => {
       <Image src="/hero.jpg" alt="" fill className="object-contain"/>
     </div>
     {/* TEXT CONTAINER */}
-    <div className=" h-1/2 pt-20 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
+    <div className=" h-1/2 pt-24 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
     {/* TITLE CONTAINER */}
-    <h1 className="py-2 text-3xl bg-gradient-to-r from-purple-300 via-red-300 inline-block text-transparent bg-clip-text  md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
+    <h1 className="text-3xl text-white  md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
     {/* DESC */}
     <p className="md:text-lg text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, amet nostrum veniam ex cupiditate dolore blanditiis minima veritatis velit perferendis.</p>
     {/* BUTTONS   */}
