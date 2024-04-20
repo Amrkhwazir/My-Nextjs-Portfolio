@@ -21,7 +21,7 @@ const Homepage = () => {
     {/* BUTTONS   */}
     <div className="w-full flex gap-4 -mt-5 ">
      <Link href={"/portfolio"}><button className="p-4 font-bold rounded-lg  bg-gradient-to-r from-purple-300 to-red-300 text-white">View My Work</button></Link>
-     <Link href={"/contact"}><button className="p-4 rounded-lg ring-1 ring-red-300 text-white">Contact Me</button></Link>
+     <a href={"/cv.pdf"} download={"cv"} ><button className="p-4 rounded-lg ring-1 ring-red-300 text-white">Download Cv</button></a>
     </div>
     </div>
   </div>

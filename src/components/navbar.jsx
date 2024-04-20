@@ -132,7 +132,7 @@ const listItemsVariants = {
       <Image src="/facebooksvg.png" alt="" width={32} height={32} />
         </Link>
         <Link className='rounded-full flex items-center justify-center' href="#">
-      <Image src="/whatsappsvg.png" alt="" width={32} height={32} />
+      <Image src="/gmail.png" alt="" width={32} height={32} />
         </Link>
         <Link className='rounded-full flex items-center justify-center' href="#">
       <Image src="/instagramsvg.png" alt="" width={32} height={32} />
