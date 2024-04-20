@@ -13,15 +13,15 @@ const Homepage = () => {
       <Image src="/hero.jpg" alt="" fill className="object-contain"/>
     </div>
     {/* TEXT CONTAINER */}
-    <div className=" h-1/2 pt-6 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
+    <div className=" h-2/3 lg:h-full lg:w-1/2 flex flex-col gap-8 item-center justify-center">
     {/* TITLE CONTAINER */}
     <h1 className="text-2xl text-white  md:text-4xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
     {/* DESC */}
-    <p className="-mt-2 md:text-lg text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, amet nostrum veniam ex cupiditate dolore blanditiis minima veritatis velit perferendis.</p>
+    <p className="-mt-2 md:text-lg text-gray-400">Welcome to my web and mobile design portfolio, where innovation meets functionality, and pixels come to life. where design knows no bounds and innovation knows no limits.</p>
     {/* BUTTONS   */}
-    <div className="w-full flex gap-4 -mt-5 ">
-     <Link href={"/portfolio"}><button className="p-4 font-bold rounded-lg  bg-gradient-to-r from-purple-300 to-red-300 text-white">View My Work</button></Link>
-     <a href={"/cv.pdf"} download={"cv"} ><button className="p-4 rounded-lg ring-1 ring-red-300 text-white">Download Cv</button></a>
+    <div className="w-full flex gap-4 md:mt-3 ">
+     <Link href={"/portfolio"}><button className="p-3 md:p-4 lg:p-4 font-bold rounded-lg  bg-gradient-to-r from-purple-300 to-red-300 text-white">View My Work</button></Link>
+     <a href={"/cv.pdf"} download={"cv"} ><button className="p-3 md:p-4 lg:p-4 rounded-lg ring-1 ring-red-300 text-white">Download Cv</button></a>
     </div>
     </div>
   </div>

@@ -90,16 +90,16 @@ const listItemsVariants = {
         <Link className='rounded-full flex items-center justify-center' href="https://github.com/Amrkhwazir" target='_blank'>
       <Image src="/githubsvg.png" alt=""  width={25} height={25} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
+        <Link className='rounded-full flex items-center justify-center' href="#" target='_blank'>
       <Image src="/facebooksvg.png" alt="" width={25} height={25} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
-      <Image src="/whatsappsvg.png" alt="" width={25} height={25} />
+        <Link className='rounded-full flex items-center justify-center' href="" target='_blank'>
+      <Image src="/gmail.png" alt="" width={25} height={25} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
+        <Link className='rounded-full flex items-center justify-center' href="#" target='_blank'>
       <Image src="/instagramsvg.png" alt="" width={25} height={25} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/">
+        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/" target='_blank'>
       <Image src="/linkedinroundsvg.png" alt="" width={25} height={25} />
         </Link>
       </div>
@@ -128,16 +128,16 @@ const listItemsVariants = {
         <Link className='rounded-full flex items-center justify-center' href="https://github.com/Amrkhwazir" target='_blank'>
       <Image src="/githubsvg.png" alt=""  width={32} height={32} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
+        <Link className='rounded-full flex items-center justify-center' href="#" target='_blank'>
       <Image src="/facebooksvg.png" alt="" width={32} height={32} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
-      <Image src="/gmail.png" alt="" width={32} height={32} />
+        <Link className='rounded-full flex items-center justify-center' href="#" target='_blank'>
+      <Image src="/Gmail.png" alt="" width={32} height={32} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="#">
+        <Link className='rounded-full flex items-center justify-center' href="#" target='_blank'>
       <Image src="/instagramsvg.png" alt="" width={32} height={32} />
         </Link>
-        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/">
+        <Link className='rounded-full flex items-center justify-center' href="https://www.linkedin.com/in/aamir-khan-215836233/" target='_blank'>
       <Image src="/linkedinroundsvg.png" alt="" width={32} height={32} />
         </Link>
       </div>
