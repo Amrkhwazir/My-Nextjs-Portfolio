@@ -30,10 +30,10 @@ const AboutPage = () => {
         <h1 className='font-bold text-2xl text-white'>BIOGRAPHY</h1>
         {/* BIOGRAPHY DESCRIPTION */}
         <p className='text-lg'>
-        Explore my portfolio to witness the synergy of form and function, where every pixel is purposeful and every interaction meaningful. Whether you're seeking to elevate your online presence, streamline your mobile strategy, or redefine the digital landscape, let's collaborate to turn your vision into reality. <br/><br/> Emphasize your expertise in each component of the MERN stack - MongoDB for database management, Express.js for server-side development, React.js for front-end development, and Node.js for back-end development.</p>
+        Explore my portfolio to witness the synergy of form and function, where every pixel is purposeful and every interaction meaningful. Whether you are seeking to elevate your online presence, streamline your mobile strategy, or redefine the digital landscape, lets collaborate to turn your vision into reality. <br/><br/> Emphasize your expertise in each component of the MERN stack - MongoDB for database management, Express.js for server-side development, React.js for front-end development, and Node.js for back-end development.</p>
         {/* BIOGRAPHY QUOTE  */}
 
-        <span className='italic'>Let's craft experiences that inspire, captivate, and endure in the ever-evolving digital landscape.
+        <span className='italic'>Lets craft experiences that inspire, captivate, and endure in the ever-evolving digital landscape.
         </span>
         {/* BIOGRAPHY SIGN */}
 
